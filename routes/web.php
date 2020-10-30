@@ -29,6 +29,32 @@ Route::get('revisar', function() {
 Route::get('cuenta', function() {
     return view('cliente.cuenta'); 
 });
+
+
+Route::get('/index', function () {
+    return view('Layouts.index');
+});
+
+Route::get('/editar', function () {
+    return view('Layouts.editar');
+});
+
+Route::get('/crear', function () {
+    return view('Layouts.crear');
+});
+
+Route::get('/bolsa', function () {
+    return view('Layouts.bolsa');
+});
+
+Route::get('/zapatos', function () {
+    return view('Layouts.zapatos');
+});
+
+Route::get('/joyeria', function () {
+    return view('Layouts.joyeria');
+});
+
 Route::post('validar'        , 'AutenticarControler@validar');
 Route::get('listar_por_categoria/{categoria_id}','BuscarControler@listar_por');
 
